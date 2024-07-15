@@ -1,0 +1,292 @@
+html,
+body,
+div,
+main,
+footer,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    max-width: 600px;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+    max-height: 4rem;
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 7rem;
+    padding-right: 1rem;
+}
+
+header nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(175, 175, 175);
+}
+
+header img {
+    max-width: 8rem;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.banner img {
+    max-width: 92%;
+    border-radius: 12px;
+}
+
+.notifications {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    color: rgb(170, 167, 9);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.clientOpt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.clientOpt div p {
+    color: rgb(160, 162, 163);
+}
+
+.clientOpt div:first-child p {
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+}
+
+.clientOpt div:first-child a {
+    color: greenyellow;
+}
+
+.clientOpt div,
+ul {
+    display: flex;
+    align-items: center
+}
+
+.clientOpt div ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.gamesOptions ul {
+    position: sticky;
+    top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gamesOptions ul li a:hover {
+    color: greenyellow;
+}
+
+.gamesOptions ul li a {
+    display: grid;
+    grid-template-columns: 30px 50px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgb(26, 26, 26);
+    color: rgb(197, 197, 197);
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/*.gamesOptions ul li a:visited {
+    color: rgb(128, 128, 128);
+    border: 1px solid rgb(36, 36, 36);
+    background-color: rgb(34, 34, 34);
+}*/
+
+
+.gamesOptions ul li .active {
+    color: rgb(250, 176, 40);
+    border: 1px solid rgb(250, 176, 40);
+    background-color: rgb(27, 27, 27);
+}
+
+.active p {
+    color: rgb(250, 176, 40);
+
+}
+
+
+.hotGames span {
+    color: rgb(92, 92, 92);
+}
+
+
+
+.hotGames {
+    text-align: center;
+}
+
+.hotGames div {
+    color: greenyellow;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    font-size: 1.3em;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hotGames ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center
+}
+
+.hotGames ul li {
+    height: 130px;
+    text-align: center;
+}
+
+.hotGames ul li a {
+    color: rgb(190, 190, 190);
+}
+
+.hotGames ul li img {
+    border-radius: 15px;
+}
+
+.slotGames ul,
+.fishingGames ul,
+.blockChainGames,
+.cardsGames {
+    display: flex;
+    flex-direction: column;
+}
+
+.slotGames,
+.fishingGames,
+.blockChainGames,
+.cardsGames {
+    color: rgb(187, 187, 186);
+    display: flex;
+    flex-direction: column;
+}
+
+.slotGames ul li a img,
+.fishingGames ul li a img,
+.blockChainGames img,
+.cardsGames img {
+    padding-bottom: 0.5rem;
+    border-radius: 15px;
+}
+
+.slotGames div:first-child,
+.fishingGames div:first-child,
+.blockChainGames div:first-child,
+.cardsGames div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+span {
+    color: rgb(90, 90, 90);
+}
+
+.lineTop {
+    border-top: 1px solid rgb(49, 49, 49);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.slotGames div:first-child h2,
+.fishingGames div:first-child h2,
+.blockChainGames div:first-child h2,
+.cardsGames div:first-child h2 {
+    font-size: 1.3em;
+    padding-left: 0.5rem;
+}
+
+.loadMore {
+    width: 100%;
+    text-align: center;
+    color: rgb(92, 92, 92);
+    margin-bottom: 1rem;
+}
+
+.loadMore a p {
+    padding-top: 0.2rem;
+    color: rgb(187, 187, 186);
+}
