@@ -99,7 +99,7 @@ header img {
     width: 600px;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 92%;
     color: rgb(170, 167, 9);
     font-weight: bold;
     margin-bottom: 1rem;
@@ -108,7 +108,7 @@ header img {
 .clientOpt {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 92%;
     margin-bottom: 1rem;
 }
 
@@ -140,9 +140,9 @@ ul {
 }
 
 .games {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 92%;
     max-width: 600px;
 }
 
@@ -171,11 +171,9 @@ ul {
     border-radius: 8px;
 }
 
-/*.gamesOptions ul li a:visited {
-    color: rgb(128, 128, 128);
-    border: 1px solid rgb(36, 36, 36);
-    background-color: rgb(34, 34, 34);
-}*/
+.gamesOptions ul li a:hover {
+    color: yellowgreen;
+}
 
 
 .gamesOptions ul li .active {
@@ -211,11 +209,12 @@ ul {
 .hotGames ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
     justify-items: center
 }
 
 .hotGames ul li {
-    height: 130px;
+
     text-align: center;
 }
 
@@ -224,6 +223,8 @@ ul {
 }
 
 .hotGames ul li img {
+    max-width: 88px;
+    width: 50%;
     border-radius: 15px;
 }
 
@@ -250,6 +251,7 @@ ul {
 .cardsGames img {
     padding-bottom: 0.5rem;
     border-radius: 15px;
+    max-width: 100%;
 }
 
 .slotGames div:first-child,
@@ -302,15 +304,31 @@ span {
     max-width: 80%;
     line-height: 1.5rem;
 }
-article{
+
+article {
     margin-bottom: 1rem;
 }
 
 #title {
     font-size: 2em;
 }
-.time{
- margin-top: 0.5rem;
- margin-bottom: 1rem;
- color: rgb(88, 88, 88);
+
+.time {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: rgb(88, 88, 88);
+}
+
+.games {
+    width: 100%;
+}
+
+.allGames {
+    max-width: 100%;
+    min-width: 100px;
+}
+
+.fishingGames {
+    max-width: 100%;
+    min-width: 100px;
 }
