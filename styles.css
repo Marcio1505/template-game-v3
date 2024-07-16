@@ -44,6 +44,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 600px;
     padding: 0.5rem 0 0.5rem 0;
     max-height: 4rem;
     background-color: rgb(0, 0, 0);
@@ -214,7 +215,7 @@ ul {
 }
 
 .hotGames ul li {
-
+    height: 140px;
     text-align: center;
 }
 
@@ -224,7 +225,7 @@ ul {
 
 .hotGames ul li img {
     max-width: 88px;
-    width: 50%;
+    width: 92%;
     border-radius: 15px;
 }
 
@@ -288,10 +289,17 @@ span {
     color: rgb(92, 92, 92);
     margin-bottom: 1rem;
 }
-
+marquee
 .loadMore a p {
     padding-top: 0.2rem;
     color: rgb(187, 187, 186);
+}
+
+marquee span{
+    color: rgb(250, 176, 40);
+}
+.space{
+    padding-left: 5rem;
 }
 
 .article {
@@ -320,7 +328,7 @@ article {
 }
 
 .games {
-    width: 100%;
+    width: 92%;
 }
 
 .allGames {
@@ -332,3 +340,22 @@ article {
     max-width: 100%;
     min-width: 100px;
 }
+
+@media (max-width: 420px) {
+    .clientOpt {
+      display: flex ;
+      flex-direction: column;
+      align-items: center
+    }
+    .clientOpt div ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 0.5rem;
+    }
+    .hotGames ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-items: center
+    }
+  }
