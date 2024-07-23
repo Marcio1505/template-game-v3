@@ -289,15 +289,17 @@ span {
     color: rgb(92, 92, 92);
     margin-bottom: 1rem;
 }
+
 .loadMore a p {
     padding-top: 0.2rem;
     color: rgb(187, 187, 186);
 }
 
-marquee span{
+marquee span {
     color: rgb(250, 176, 40);
 }
-.space{
+
+.space {
     padding-left: 5rem;
 }
 
@@ -342,19 +344,73 @@ article {
 
 @media (max-width: 420px) {
     .clientOpt {
-      display: flex ;
-      flex-direction: column;
-      align-items: center
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
-    .clientOpt div ul{
+
+    .clientOpt div ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 0.5rem;
     }
+
     .hotGames ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         justify-items: center
     }
-  }
+}
+
+.article {
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+
+article {
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.article article p {
+    text-indent: 3em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+#title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2em;
+}
+
+.subtitle {
+    padding: 1em 0em 1em 0;
+    color: rgb(224, 222, 222);
+    margin-top: 0.8rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.section {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subSection {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.article a{
+    color: #fff;
+}
