@@ -68,13 +68,14 @@ main {
 header nav {
     display: flex;
     justify-content: space-evenly;
-    width: 7rem;
+    width: 8rem;
     padding-right: 1rem;
 }
 
 header nav a {
     display: flex;
     flex-direction: column;
+    padding-right: 0.5rem;
     align-items: center;
     color: rgb(175, 175, 175);
 }
@@ -160,9 +161,10 @@ ul {
 
 .gamesOptions ul li a {
     display: grid;
-    grid-template-columns: 30px 50px;
+    grid-template-columns: 32px 50px;
     align-items: center;
     justify-items: center;
+    justify-content: space-between;
     background-color: rgb(39, 39, 39);
     border: 1px solid rgb(26, 26, 26);
     color: rgb(197, 197, 197);
@@ -170,6 +172,7 @@ ul {
     margin-right: 1rem;
     padding: 0.5rem;
     border-radius: 8px;
+    text-align: center;
 }
 
 .gamesOptions ul li a:hover {
@@ -413,4 +416,9 @@ article {
 
 .article a{
     color: #fff;
+}
+
+footer p{
+    color: #fff;
+    padding-right: 2rem;
 }
